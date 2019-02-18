@@ -5,7 +5,7 @@ git 'https://github.com/pavanireddykonda35/raki.git'
     stage('build mvn') {
 sh 'mvn package'
     }
-    stag('test result') {
+    stage('test result') {
     junit 'gameoflife-web/target/surefire-reports/*.xml'
     }
     stage( 'archifacts') {
